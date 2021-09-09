@@ -1,0 +1,34 @@
+<html>
+    <head>
+         <meta charset="utf-8">
+         <title>ЛАБА1</title>
+         <style>
+         body{
+             align-content: center;
+             text-align: center;
+         }
+         </style>
+           <script>
+              function getCoordinates(){
+              navigator.geolocation.getCurrentPosition(gloria)
+              function gloria(metr) {
+                var c = metr.coords;
+              alert('Ваши координаты: </br> Ширина:' + c.latitude + '</br> Долгота:' + c.longitude);
+            }}
+            </script> 
+    </head>
+    <body>
+        <h1> Я, <mark>Чепелева Е.Г.</mark>, изучаю HTML5 </h1>
+        <audio controls>
+                <source src="BringMetheHorizon.ogv" type="audio/ogg">
+                <source src="BringMetheHorizon.mp3" type="audio/mpeg">
+        </audio>
+    </br> </br>
+        <video controls width="400" height="300">
+                <source src="video.mp4" type="video/mp4">
+              
+       </video>
+    </br> </br>
+       <input type="button" value="Нажми на меня для считывания координат" onclick="getCoordinates()"/>
+    </body>
+</html>
